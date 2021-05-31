@@ -196,8 +196,10 @@ for test in *.sh; do ./$test "$TARGET"; sleep 1; done
 
 ## SIPp version
 
-This testsuite currently uses a binary version of SIPp in helpers/sipp including
-STIR/SHAKEN support. You have to install libstirshaken to be able to run it.
+This testsuite uses a modified version of SIPp including STIR/SHAKEN support.
+A build is provided in helpers/sipp, you have to install libstirshaken to be
+able to run it.
 
-We'll provide a patch against upstream SIPp (and will try to get it merged into
-upstream) as soon as possible.
+The source code of SIPp including the STIR/SHAKEN patch is located here:
+* https://github.com/sipfront/sipp/tree/agranig/stirshaken
+
